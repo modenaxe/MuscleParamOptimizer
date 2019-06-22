@@ -1,0 +1,13 @@
+Example 2
+----------
+The license of use for the cadaveric data used to create the subject 
+specific model used in Example 2 is available in the subfolder "MSK_Model" 
+subfolder. The original data are available at www.physiomespace.com.
+
+The license file for the reference model used in Example 2 is also in the subfolder
+"MSK_Model". It is a reduced version (list of modification available in the license file) 
+of the single leg model available at https://simtk.org/home/lowlimbmodel09 
+and associated to the following publication: 
+Arnold, E., Ward, S., Lieber, R. and Delp, S., 2010. 
+A Model of the Lower Limb for Analysis of Human Movement. 
+Annals of biomedical engineering 38, 269-279.

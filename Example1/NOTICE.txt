@@ -1,0 +1,10 @@
+Example 1
+----------
+The license of use for the model and data used in Example 1 is available 
+in the "MSK_Model" subfolder.
+The data were downloaded from https://simtk.org/home/runningsim and are 
+associated to the publication:
+Hamner, S. R., Seth, A. and Delp, S. L., 2010. 
+Muscle contributions to propulsion and support during running. 
+Journal of Biomechanics 43, 2709-2716.
+

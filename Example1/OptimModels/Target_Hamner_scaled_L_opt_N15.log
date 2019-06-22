@@ -1,0 +1,387 @@
+  
+Calculated optimized muscle parameters for glut_med1_l in 4.2079 seconds.
+                         Lm Opt        Lts
+Template model       : 0.0535       0.078
+Optimized param      : 0.055741    0.077023
+Nr of eval points    : 3083/3375 used
+fval                 : 4.4979e-07
+var from template [%]: 4.1895      1.2527%
+  
+  
+Calculated optimized muscle parameters for glut_med2_l in 4.206 seconds.
+                         Lm Opt        Lts
+Template model       : 0.0845       0.053
+Optimized param      : 0.088044    0.050671
+Nr of eval points    : 3375/3375 used
+fval                 : 1.7239e-06
+var from template [%]: 4.194      4.3944%
+  
+  
+Calculated optimized muscle parameters for glut_med3_l in 4.193 seconds.
+                         Lm Opt        Lts
+Template model       : 0.0646       0.053
+Optimized param      : 0.067081    0.051942
+Nr of eval points    : 3375/3375 used
+fval                 : 1.5279e-06
+var from template [%]: 3.8411      1.9956%
+  
+  
+Calculated optimized muscle parameters for glut_min1_l in 4.1888 seconds.
+                         Lm Opt        Lts
+Template model       : 0.068       0.016
+Optimized param      : 0.069897    0.015707
+Nr of eval points    : 3375/3375 used
+fval                 : 2.2923e-08
+var from template [%]: 2.789      1.8287%
+  
+  
+Calculated optimized muscle parameters for glut_min2_l in 4.195 seconds.
+                         Lm Opt        Lts
+Template model       : 0.056       0.026
+Optimized param      : 0.057378    0.026408
+Nr of eval points    : 3375/3375 used
+fval                 : 3.5405e-09
+var from template [%]: 2.4612      1.5683%
+  
+  
+Calculated optimized muscle parameters for glut_min3_l in 4.218 seconds.
+                         Lm Opt        Lts
+Template model       : 0.038       0.051
+Optimized param      : 0.038922     0.05205
+Nr of eval points    : 3229/3375 used
+fval                 : 1.8634e-09
+var from template [%]: 2.427      2.0579%
+  
+  
+Calculated optimized muscle parameters for semimem_l in 65.2498 seconds.
+                         Lm Opt        Lts
+Template model       : 0.08       0.359
+Optimized param      : 0.083468     0.38258
+Nr of eval points    : 15584/50625 used
+fval                 : 0.036955
+var from template [%]: 4.3345      6.5691%
+  
+  
+Calculated optimized muscle parameters for semiten_l in 65.3286 seconds.
+                         Lm Opt        Lts
+Template model       : 0.201      0.2555
+Optimized param      : 0.21265     0.27579
+Nr of eval points    : 50625/50625 used
+fval                 : 0.26965
+var from template [%]: 5.7957      7.9421%
+  
+  
+Calculated optimized muscle parameters for bifemlh_l in 65.2403 seconds.
+                         Lm Opt        Lts
+Template model       : 0.109       0.326
+Optimized param      : 0.11214     0.34965
+Nr of eval points    : 31942/50625 used
+fval                 : 0.14659
+var from template [%]: 2.8781       7.256%
+  
+  
+Calculated optimized muscle parameters for bifemsh_l in 0.039232 seconds.
+                         Lm Opt        Lts
+Template model       : 0.173       0.089
+Optimized param      : 0.19518    0.086917
+Nr of eval points    : 15/15 used
+fval                 : 2.2603e-07
+var from template [%]: 12.8192      2.34029%
+  
+  
+Calculated optimized muscle parameters for sar_l in 66.2571 seconds.
+                         Lm Opt        Lts
+Template model       : 0.52         0.1
+Optimized param      : 0.52716     0.12452
+Nr of eval points    : 50625/50625 used
+fval                 : 0.032562
+var from template [%]: 1.37666      24.5232%
+  
+  
+Calculated optimized muscle parameters for add_long_l in 4.2172 seconds.
+                         Lm Opt        Lts
+Template model       : 0.138        0.11
+Optimized param      : 0.1372     0.12153
+Nr of eval points    : 3375/3375 used
+fval                 : 5.2543e-06
+var from template [%]: 0.582467      10.4828%
+  
+  
+Calculated optimized muscle parameters for add_brev_l in 4.2011 seconds.
+                         Lm Opt        Lts
+Template model       : 0.133        0.02
+Optimized param      : 0.13365    0.025024
+Nr of eval points    : 3375/3375 used
+fval                 : 4.2757e-07
+var from template [%]: 0.488202      25.1222%
+  
+  
+Calculated optimized muscle parameters for add_mag1_l in 4.2043 seconds.
+                         Lm Opt        Lts
+Template model       : 0.087        0.06
+Optimized param      : 0.086907    0.065626
+Nr of eval points    : 3319/3375 used
+fval                 : 1.0733e-06
+var from template [%]: 0.10712      9.3759%
+  
+  
+Calculated optimized muscle parameters for add_mag2_l in 4.2652 seconds.
+                         Lm Opt        Lts
+Template model       : 0.121        0.12
+Optimized param      : 0.11889      0.1337
+Nr of eval points    : 3195/3375 used
+fval                 : 2.1635e-06
+var from template [%]: 1.74544      11.4194%
+  
+  
+Calculated optimized muscle parameters for add_mag3_l in 4.4822 seconds.
+                         Lm Opt        Lts
+Template model       : 0.131       0.249
+Optimized param      : 0.12853     0.27222
+Nr of eval points    : 3288/3375 used
+fval                 : 5.7782e-06
+var from template [%]: 1.8876      9.3238%
+  
+  
+Calculated optimized muscle parameters for tfl_l in 65.986 seconds.
+                         Lm Opt        Lts
+Template model       : 0.095       0.425
+Optimized param      : 0.097041     0.44987
+Nr of eval points    : 50625/50625 used
+fval                 : 0.0018109
+var from template [%]: 2.1487      5.8517%
+  
+  
+Calculated optimized muscle parameters for pect_l in 4.2372 seconds.
+                         Lm Opt        Lts
+Template model       : 0.1       0.033
+Optimized param      : 0.10054    0.036711
+Nr of eval points    : 3358/3375 used
+fval                 : 8.31e-07
+var from template [%]: 0.537085       11.244%
+  
+  
+Calculated optimized muscle parameters for grac_l in 65.8645 seconds.
+                         Lm Opt        Lts
+Template model       : 0.352       0.126
+Optimized param      : 0.38719     0.12709
+Nr of eval points    : 50625/50625 used
+fval                 : 0.067884
+var from template [%]: 9.9969     0.86538%
+  
+  
+Calculated optimized muscle parameters for glut_max1_l in 4.2226 seconds.
+                         Lm Opt        Lts
+Template model       : 0.142       0.125
+Optimized param      : 0.14665      0.1253
+Nr of eval points    : 1710/3375 used
+fval                 : 6.385e-08
+var from template [%]: 3.2736     0.23944%
+  
+  
+Calculated optimized muscle parameters for glut_max2_l in 4.2138 seconds.
+                         Lm Opt        Lts
+Template model       : 0.147       0.127
+Optimized param      : 0.14968     0.13016
+Nr of eval points    : 1940/3375 used
+fval                 : 8.2968e-08
+var from template [%]: 1.8237      2.4899%
+  
+  
+Calculated optimized muscle parameters for glut_max3_l in 4.2283 seconds.
+                         Lm Opt        Lts
+Template model       : 0.144       0.145
+Optimized param      : 0.14641     0.14881
+Nr of eval points    : 2457/3375 used
+fval                 : 8.8628e-07
+var from template [%]: 1.6743      2.6307%
+  
+  
+Calculated optimized muscle parameters for iliacus_l in 4.2474 seconds.
+                         Lm Opt        Lts
+Template model       : 0.1         0.1
+Optimized param      : 0.10079     0.10128
+Nr of eval points    : 3375/3375 used
+fval                 : 1.2422e-05
+var from template [%]: 0.78889      1.2783%
+  
+  
+Calculated optimized muscle parameters for psoas_l in 4.2235 seconds.
+                         Lm Opt        Lts
+Template model       : 0.1        0.16
+Optimized param      : 0.10119      0.1601
+Nr of eval points    : 3375/3375 used
+fval                 : 6.9932e-06
+var from template [%]: 1.1945    0.064715%
+  
+  
+Calculated optimized muscle parameters for quad_fem_l in 4.2191 seconds.
+                         Lm Opt        Lts
+Template model       : 0.054       0.024
+Optimized param      : 0.055584    0.023851
+Nr of eval points    : 3375/3375 used
+fval                 : 1.1843e-07
+var from template [%]: 2.9334     0.62023%
+  
+  
+Calculated optimized muscle parameters for gem_l in 4.2207 seconds.
+                         Lm Opt        Lts
+Template model       : 0.024       0.039
+Optimized param      : 0.024532    0.039976
+Nr of eval points    : 3375/3375 used
+fval                 : 2.8162e-10
+var from template [%]: 2.2165      2.5028%
+  
+  
+Calculated optimized muscle parameters for peri_l in 4.2296 seconds.
+                         Lm Opt        Lts
+Template model       : 0.026       0.115
+Optimized param      : 0.026897     0.11496
+Nr of eval points    : 2496/3375 used
+fval                 : 4.0352e-08
+var from template [%]: 3.4517     0.03385%
+  
+  
+Calculated optimized muscle parameters for rect_fem_l in 70.8692 seconds.
+                         Lm Opt        Lts
+Template model       : 0.114        0.31
+Optimized param      : 0.12043      0.3265
+Nr of eval points    : 50580/50625 used
+fval                 : 0.074041
+var from template [%]: 5.6439      5.3237%
+  
+  
+Calculated optimized muscle parameters for vas_med_l in 0.041688 seconds.
+                         Lm Opt        Lts
+Template model       : 0.089       0.126
+Optimized param      : 0.095914      0.1322
+Nr of eval points    : 14/15 used
+fval                 : 5.9188e-07
+var from template [%]: 7.769      4.9206%
+  
+  
+Calculated optimized muscle parameters for vas_int_l in 0.040867 seconds.
+                         Lm Opt        Lts
+Template model       : 0.087       0.136
+Optimized param      : 0.094498     0.14208
+Nr of eval points    : 15/15 used
+fval                 : 4.3382e-07
+var from template [%]: 8.6188      4.4701%
+  
+  
+Calculated optimized muscle parameters for vas_lat_l in 0.034808 seconds.
+                         Lm Opt        Lts
+Template model       : 0.084       0.157
+Optimized param      : 0.090635     0.16509
+Nr of eval points    : 14/15 used
+fval                 : 5.2491e-07
+var from template [%]: 7.8992      5.1515%
+  
+  
+Calculated optimized muscle parameters for med_gas_l in 0.33867 seconds.
+                         Lm Opt        Lts
+Template model       : 0.06        0.39
+Optimized param      : 0.065136     0.43429
+Nr of eval points    : 149/225 used
+fval                 : 3.17e-05
+var from template [%]: 8.56067      11.3573%
+  
+  
+Calculated optimized muscle parameters for lat_gas_l in 0.39656 seconds.
+                         Lm Opt        Lts
+Template model       : 0.064        0.38
+Optimized param      : 0.069525     0.42348
+Nr of eval points    : 148/225 used
+fval                 : 2.9432e-05
+var from template [%]: 8.63284      11.4415%
+  
+  
+Calculated optimized muscle parameters for soleus_l in 0.036675 seconds.
+                         Lm Opt        Lts
+Template model       : 0.05        0.25
+Optimized param      : 0.05542     0.27773
+Nr of eval points    : 14/15 used
+fval                 : 1.1736e-09
+var from template [%]: 10.841      11.0905%
+  
+  
+Calculated optimized muscle parameters for tib_post_l in 0.044814 seconds.
+                         Lm Opt        Lts
+Template model       : 0.031        0.31
+Optimized param      : 0.035231     0.34319
+Nr of eval points    : 15/15 used
+fval                 : 6.1497e-12
+var from template [%]: 13.6477      10.7079%
+  
+  
+Calculated optimized muscle parameters for flex_dig_l in 0.042753 seconds.
+                         Lm Opt        Lts
+Template model       : 0.034         0.4
+Optimized param      : 0.038933     0.44145
+Nr of eval points    : 14/15 used
+fval                 : 1.7637e-10
+var from template [%]: 14.5078      10.3624%
+  
+  
+Calculated optimized muscle parameters for flex_hal_l in 0.050546 seconds.
+                         Lm Opt        Lts
+Template model       : 0.043        0.38
+Optimized param      : 0.0484     0.41951
+Nr of eval points    : 15/15 used
+fval                 : 1.6788e-11
+var from template [%]: 12.5585      10.3966%
+  
+  
+Calculated optimized muscle parameters for tib_ant_l in 0.038874 seconds.
+                         Lm Opt        Lts
+Template model       : 0.098       0.223
+Optimized param      : 0.10836     0.24729
+Nr of eval points    : 15/15 used
+fval                 : 5.5364e-09
+var from template [%]: 10.569      10.8919%
+  
+  
+Calculated optimized muscle parameters for per_brev_l in 0.044814 seconds.
+                         Lm Opt        Lts
+Template model       : 0.05       0.161
+Optimized param      : 0.058879     0.17541
+Nr of eval points    : 15/15 used
+fval                 : 2.7134e-09
+var from template [%]: 17.7589      8.94816%
+  
+  
+Calculated optimized muscle parameters for per_long_l in 0.03837 seconds.
+                         Lm Opt        Lts
+Template model       : 0.049       0.345
+Optimized param      : 0.055922     0.38064
+Nr of eval points    : 15/15 used
+fval                 : 4.5979e-10
+var from template [%]: 14.1258      10.3296%
+  
+  
+Calculated optimized muscle parameters for per_tert_l in 0.04197 seconds.
+                         Lm Opt        Lts
+Template model       : 0.079         0.1
+Optimized param      : 0.087042     0.11136
+Nr of eval points    : 15/15 used
+fval                 : 3.2191e-09
+var from template [%]: 10.1794      11.3561%
+  
+  
+Calculated optimized muscle parameters for ext_dig_l in 0.041642 seconds.
+                         Lm Opt        Lts
+Template model       : 0.102       0.345
+Optimized param      : 0.11203     0.38243
+Nr of eval points    : 15/15 used
+fval                 : 1.053e-09
+var from template [%]: 9.83183       10.848%
+  
+  
+Calculated optimized muscle parameters for ext_hal_l in 0.039222 seconds.
+                         Lm Opt        Lts
+Template model       : 0.111       0.305
+Optimized param      : 0.12219     0.33782
+Nr of eval points    : 15/15 used
+fval                 : 4.0326e-09
+var from template [%]: 10.0833      10.7613%
+  

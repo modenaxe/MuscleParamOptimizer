@@ -1,0 +1,40 @@
+=====================================
+MUSCLE PARAM VARIATIONS (EXAMPLE 1)
+=====================================
+Lopt variation [%] :  MIN:-1.8695  (add_mag3_l)
+                      MAX:17.7543  (per_brev_l)
+Lts variation [%]  :  MIN:-4.4026  (glut_med2_l)
+                      MAX:25.1212  (add_brev_l)
+=====================================
+MUSCLE MAPPING METRICS (EXAMPLE 1)
+=====================================
+Range of RMSE       :  MIN:1.2352e-05  (gem_l)
+                       MAX:0.01855  (bifemlh_l)
+Range of MeanErr [%]:  MIN:0.0010391  (gem_l)
+                       MAX:2.345  (bifemlh_l)
+Range of MaxErr [%] :  MIN:0.0046338  (tib_post_l)
+                       MAX:6.9561  (semimem_l)
+Range of corr coeff :  MIN:0.99382
+                       MAX:1
+Range of p val      :  MIN:0
+                       MAX:3.9421e-15
+=====================================
+MUSCLE PARAM VARIATIONS (EXAMPLE 2)
+=====================================
+Lopt variation [%] :  MIN:-36.1283  (quad_fem_r)
+                      MAX:47.2473  (grac_r)
+Lts variation [%]  :  MIN:-87.379  (sar_r)
+                      MAX:143.6448  (glut_min1_r)
+=====================================
+MUSCLE MAPPING METRICS (EXAMPLE 2)
+=====================================
+Range of RMSE       :  MIN:0.0039805  (sar_r)
+                       MAX:0.2226  (quad_fem_r)
+Range of MeanErr [%]:  MIN:0.29997  (sar_r)
+                       MAX:22.508  (quad_fem_r)
+Range of MaxErr [%] :  MIN:0.78521  (sar_r)
+                       MAX:89.8786  (quad_fem_r)
+Range of corr coeff :  MIN:0.67871
+                       MAX:0.99883
+Range of p val      :  MIN:0
+                       MAX:1.8279e-123
