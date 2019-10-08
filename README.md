@@ -1,18 +1,16 @@
----------------------
 GENERAL DESCRIPTION
 ---------------------
 
 This Matlab package is made available as accompanying material of the publication: Modenese, L., Ceseracciu, 
 E., Reggiani, M. and Lloyd, D. G., Estimation of musculotendon parameters for scaled and subject specific 
-musculoskeletal models using an optimization technique. Journal of Biomechanics (2016, in press).
+musculoskeletal models using an optimization technique. Journal of Biomechanics. 49: 141-148, 2016.
 
--------------
+
 REQUIREMENTS
 -------------
 This package requires to have installed the OpenSim 3.2 API for Matlab.
 See how to install it at http://simtk-confluence.stanford.edu:8080/display/OpenSim/Scripting+with+Matlab
 
----------
 CONTENTS
 ---------
 
@@ -26,6 +24,5 @@ dataset can be found in folder Example#>MSK_Models.
 Reproducing the sensitivity study can be time-consuming, depending on the available
 computational resources.
 
-LM
-
-(updated 04Jan2016)
+created by LM 04Jan2016
+modified 8 Oct 2019
