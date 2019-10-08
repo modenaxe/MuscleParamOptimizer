@@ -1,5 +1,5 @@
 %-------------------------------------------------------------------------%
-% Copyright (c) 2015 Modenese L., Ceseracciu, E., Reggiani M., Lloyd, D.G.%
+% Copyright (c) 2019 Modenese L., Ceseracciu, E., Reggiani M., Lloyd, D.G.%
 %                                                                         %
 % Licensed under the Apache License, Version 2.0 (the "License");         %
 % you may not use this file except in compliance with the License.        %
