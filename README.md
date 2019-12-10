@@ -1,10 +1,10 @@
 # Introduction
 
-This repository contains a MATLAB package implementing an algorithm for optimizing the parameters of 
-Hill-type muscle models defined by adimensional force-lenght-velocity curves, as described by _Zajac (1989)_.
+This repository contains a MATLAB package implementing an algorithm for optimizing the parameters of Hill-type muscle models defined by adimensional force-lenght-velocity curves, as described by _Zajac (1989)_.
+
+
 The algorithm is generic but the implementation is specific for musculoskeletal models implemented in the software for biomechanical analyses [OpenSim](https://opensim.stanford.edu/).
 
-# Publication
 
 The repository is made available as accompanying material of [this publication](https://research-repository.griffith.edu.au/bitstream/handle/10072/101916/ModenesePUB918.pdf?sequence=1): 
 
@@ -38,7 +38,7 @@ cadaveric measurements.
 The idea consists in mapping the normalized muscle contractile conditions from these reference models to those of personalised models, i.e. linearly scaled or fully subject-specific, for the same joint angles and muscle activation levels. In this respect, the algorithm is a generalization of method proposed by _Winby et al. (2008)_ for the knee-spanning muscles.
 
 ## Considered Cases
-* **Scaled generic model**: a [generic model](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/Example1/MSK_Models) published by _Hamner et al. (2010)_ was scaled linearly to the size of an individual to perform a running simulation. The muscle parameters are optimized non-linearly using the same generic model as reference model.
+* **Scaled generic model**: a lower limb model was scaled linearly to the size of an individual to [perform a running simulation](https://simtk.org/projects/runningsim) as published by _Hamner et al. (2010)_. The muscle parameters of the [obtained model](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/Example1/MSK_Models) were then optimized non-linearly using the original generic model as reference model.
 * **Subject-specific model**: a [model of the lower limb](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/Example2/MSK_Models) was built from scratch using the LHDL cadaveric dataset and its muscle parameters were estimated and validated using the [lower limb model](https://simtk.org/projects/lowlimbmodel09) of _Arnold et al. (2010)_ as reference model.
 
 ## MATLAB Scripts
