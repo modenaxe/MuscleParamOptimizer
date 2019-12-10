@@ -53,6 +53,13 @@ __Please note__ that reproducing the sensitivity study can be time-consuming, de
 An example of use of a MATLAB tool is available in the [corresponding folder](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/MATLAB_tool). 
 The same main script can be easily adapted for the optimization of other personalized models.
 
+# OpenSim C++ plugin and User Interface Menu
+
+A generic tool to optimize musculotendon parameters in musculoskeletal models is also available at [this repository](https://github.com/MuscleOptimizer/MuscleOptimizer) as:
+* C++ OpenSim plugin 
+* as menu extension of the OpenSim GUI (graphical user interface).
+Please refer directly to the repository and to the nice documentation available at [this website](http://muscleoptimizer.github.io/MuscleOptimizer/).
+
 # References
 * Zajac, F.E. Muscle and tendon: properties, models, scaling, and application to biomechanics and motor control. Critical Reviews in Biomedical Engineering. 17: 359-411, 1989. [LINK](https://www.ncbi.nlm.nih.gov/pubmed/2676342)
 * Winby, C.R., Lloyd, D.G.  Kirk, T.B. Evaluation of different analytical methods for subject-specific scaling of musculotendon parameters. Journal of Biomechanics. 41: 1682-1688, 2008. [LINK](https://www.ncbi.nlm.nih.gov/pubmed/18456272)
