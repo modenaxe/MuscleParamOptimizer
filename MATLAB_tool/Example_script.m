@@ -31,8 +31,8 @@ import org.opensim.modeling.*
 % getting example details
 case_folder = './Test_case';
 % model files with paths
-osimModel_ref_filepath   = [case_folder,'\MSK_Models\Reference_Arnold_R.osim'];
-osimModel_targ_filepath  = [case_folder,'\MSK_Models\Target_LHDL_Schutte_R.osim'];
+osimModel_ref_filepath   = [case_folder,'\Input_Models\Reference_Arnold_R.osim'];
+osimModel_targ_filepath  = [case_folder,'\Input_Models\Target_LHDL_Schutte_R.osim'];
 % evaluations
 N_eval = 10;
 %================================
@@ -41,7 +41,7 @@ N_eval = 10;
 addpath('./MuscleParOptTool');
 
 % initializing folders and log file
-OptimizedModel_folder   = [case_folder,'/Optim_Models'];% folder for storing optimized model
+OptimizedModel_folder   = [case_folder,'/Optimized_Models'];% folder for storing optimized model
 log_folder              = OptimizedModel_folder;
 % checking if Results folder exists. If not, create it.
 if ~isdir(OptimizedModel_folder)
