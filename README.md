@@ -29,17 +29,17 @@ In order to use this MATLAB package it is necessary to:
 * install OpenSim 3.2 or higher
 * setup the OpenSim API (Application User Interface) for MATLAB as described [at this link](http://simtk-confluence.stanford.edu:8080/display/OpenSim/Scripting+with+Matlab).
 
-# Contents
+# Contents from the paper
 
-## Algorithm
+## Algorithm description
 The algorithm starts from an existing model in which the muscle parameters, and the derived muscle dynamics, are assumed to be accurate. These models, known as _generic models_ and here referred to as _Reference Models_, are generally created from 
 cadaveric measurements.
 
 The idea consists in mapping the normalized muscle contractile conditions from these reference models to those of personalised models, i.e. linearly scaled or fully subject-specific, for the same joint angles and muscle activation levels. In this respect, the algorithm is a generalization of method proposed by _Winby et al. (2008)_ for the knee-spanning muscles.
 
 ## Considered Cases
-* **Scaled generic model**: a lower limb model was scaled linearly to the size of an individual to [perform a running simulation](https://simtk.org/projects/runningsim) as published by _Hamner et al. (2010)_. The muscle parameters of the [obtained model](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/Example1/MSK_Models) were then optimized non-linearly using the original generic model as reference model.
-* **Subject-specific model**: a [model of the lower limb](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/Example2/MSK_Models) was built from scratch using the LHDL cadaveric dataset and its muscle parameters were estimated and validated using the [lower limb model](https://simtk.org/projects/lowlimbmodel09) of _Arnold et al. (2010)_ as reference model.
+* **Scaled generic model**: a lower limb model was scaled linearly to the size of an individual to [perform a running simulation](https://simtk.org/projects/runningsim) as published by _Hamner et al. (2010)_. The muscle parameters of the [obtained model](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/manuscript_material/Example1/MSK_Models) were then optimized non-linearly using the original generic model as reference model.
+* **Subject-specific model**: a [model of the lower limb](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/manuscript_material/Example2/MSK_Models) was built from scratch using the LHDL cadaveric dataset and its muscle parameters were estimated and validated using the [lower limb model](https://simtk.org/projects/lowlimbmodel09) of _Arnold et al. (2010)_ as reference model.
 
 ## MATLAB Scripts
 Following the alphabetic order of the scripts in the main folder, it is possible to:
@@ -47,6 +47,11 @@ Following the alphabetic order of the scripts in the main folder, it is possible
 * generate the associated Figures (scripts c-d-e).
 
 __Please note__ that reproducing the sensitivity study can be time-consuming, depending on the available computational resources.
+
+# Example of use of a generic MATLAB tool
+
+An example of use of a MATLAB tool is available in the [corresponding folder](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/MATLAB_tool). 
+The same main script can be easily adapted for the optimization of other personalized models.
 
 # References
 * Zajac, F.E. Muscle and tendon: properties, models, scaling, and application to biomechanics and motor control. Critical Reviews in Biomedical Engineering. 17: 359-411, 1989. [LINK](https://www.ncbi.nlm.nih.gov/pubmed/2676342)
