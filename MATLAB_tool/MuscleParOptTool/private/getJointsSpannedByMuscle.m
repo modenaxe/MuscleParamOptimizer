@@ -57,12 +57,12 @@ for n_point = 0:musclePathPointSet.getSize()-1
     currentAttachBody = char(musclePathPointSet.get(n_point).getBodyName());
     
     %Initialize
-    if n_point ==0;
+    if n_point ==0
         previousAttachBody = currentAttachBody;
         muscleAttachBodies{n_body} = currentAttachBody;
         muscleAttachIndex(n_body) = BodySet.getIndex(currentAttachBody);
         n_body = n_body+1;
-    end;
+    end
     
     % building a vectors of the bodies attached to the muscles
     if ~strncmp(currentAttachBody,previousAttachBody, size(char(currentAttachBody),2))
