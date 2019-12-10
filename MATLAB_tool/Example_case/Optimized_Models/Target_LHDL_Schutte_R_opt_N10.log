@@ -1,0 +1,9 @@
+  
+Calculated optimized muscle parameters for add_brev_r in 9.2292 seconds.
+                         Lm Opt        Lts
+Template model       : 0.1031       0.036
+Optimized param      : 0.11995    0.025348
+Nr of eval points    : 1000/1000 used
+fval                 : 0.012067
+var from template [%]: 16.3451      29.5893%
+  
