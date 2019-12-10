@@ -12,9 +12,9 @@
 % implied. See the License for the specific language governing            %
 % permissions and limitations under the License.                          %
 %                                                                         %
-%    Author:  Luca Modenese, August 2014                                  %
-%                           revised for paper May 2015                    %
-%    email:    l.modenese@sheffield.ac.uk                                 % 
+%    Author: Luca Modenese, August 2014                                   %
+%                            revised for paper May 2015                   %
+%    email:    l.modenese@imperial.ac.uk                                  % 
 % ----------------------------------------------------------------------- %
 %
 % Script optimizing muscle parameters for the Example 2 described in 

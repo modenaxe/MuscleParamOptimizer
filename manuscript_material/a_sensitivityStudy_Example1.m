@@ -14,7 +14,7 @@
 %                                                                         %
 %    Author: Luca Modenese, August 2014                                   %
 %                            revised for paper May 2015                   %
-%    email:    l.modenese@sheffield.ac.uk                                 % 
+%    email:    l.modenese@imperial.ac.uk                                  % 
 % ----------------------------------------------------------------------- %
 %
 % Script optimizing muscle parameters for the Example 1 described in 

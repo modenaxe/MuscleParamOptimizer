@@ -1,5 +1,5 @@
 %-------------------------------------------------------------------------%
-% Copyright (c) 2015 Griffith University and the Author(s)                %
+% Copyright (c) 2019 Griffith University and the Author(s)                %
 %                                                                         %
 % Licensed under the Apache License, Version 2.0 (the "License");         %
 % you may not use this file except in compliance with the License.        %
@@ -13,7 +13,7 @@
 % permissions and limitations under the License.                          %
 %                                                                         %
 %    Author:   Luca Modenese, May 2015                                    %
-%    email:    l.modenese@griffith.edu.au                                 % 
+%    email:    l.modenese@imperial.ac.uk                                  % 
 % ----------------------------------------------------------------------- %
 %
 % Script to calculate proportionality index of scaling that would scale

@@ -13,7 +13,7 @@
 % permissions and limitations under the License.                          %
 %                                                                         %
 %    Author:   Luca Modenese, August 2014                                 %
-%    email:    l.modenese@sheffield.ac.uk                                 % 
+%    email:    l.modenese@imperial.ac.uk                                  % 
 % ----------------------------------------------------------------------- %
 %
 % This script reads the results of the sensitivity study of both examples
