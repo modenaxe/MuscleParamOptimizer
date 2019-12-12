@@ -18,4 +18,4 @@
 % This script runs the test implemented in the test folder.
 % ----------------------------------------------------------------------- %
 clear
-runtests('TESTS_MusOptTool.m');
+runtests('TESTS_MusOptTool.m')
