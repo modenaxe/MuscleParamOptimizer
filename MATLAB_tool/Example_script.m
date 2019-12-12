@@ -17,44 +17,48 @@
 %    email:    l.modenese@imperial.ac.uk                                  % 
 % ----------------------------------------------------------------------- %
 %
-% Script implementing the method for optimizing musculotendon paramters 
-% described described in 
-% Modenese L, Ceseracciu E, Reggiani M, Lloyd DG (2016). "Estimation of 
-% musculotendon parameters for scaled and subject specific musculoskeletal 
-% models using an optimization technique" Journal of Biomechanics (in press)
-
+% Script that implements an example of use of optimization of the 
+% musculotendon parameters using the MATLAB tool make available in this
+% repository.
+% ----------------------------------------------------------------------- %
 clear;clc;close all
+
 % importing OpenSim libraries
 import org.opensim.modeling.*
 
 %========= USERS SETTINGS =======
-% getting example details
-case_folder = './Test_case';
-% model files with paths
-osimModel_ref_filepath   = [case_folder,'\Input_Models\Reference_Arnold_R.osim'];
-osimModel_targ_filepath  = [case_folder,'\Input_Models\Target_LHDL_Schutte_R.osim'];
-% evaluations
+% REFERENCE MODEL
+% Muscle dynamics from Arnold model will be mapped onto the target model.
+osimModel_ref_filepath   = '.\Example_case\Input_Models\Reference_Arnold_R.osim';
+
+% TARGET MODEL
+% Target model is a model built from scratch using dataveric data.
+osimModel_targ_filepath  = '.\Example_case\Input_Models\Target_LHDL_Schutte_R.osim';
+
+% nr of evaluations per coordinate
 N_eval = 10;
+
+% Folder where to store the optimized model and a log
+optimizedModel_folder = '.\Example_case\Optimized_Models';
 %================================
 
-% adding libraries to path
+% adding tool function to MATLAB path
 addpath('./MuscleParOptTool');
 
 % initializing folders and log file
-OptimizedModel_folder   = [case_folder,'/Optimized_Models'];% folder for storing optimized model
-log_folder              = OptimizedModel_folder;
+log_folder              = optimizedModel_folder;
+
 % checking if Results folder exists. If not, create it.
-if ~isdir(OptimizedModel_folder)
-    warning(['Folder ', OptimizedModel_folder, ' does not exist. It will be created.'])
-    mkdir(OptimizedModel_folder);
+if ~isdir(optimizedModel_folder)
+    warning(['Folder ', optimizedModel_folder, ' does not exist. It will be created.'])
+    mkdir(optimizedModel_folder);
 end
 
-% optimizing target model based on reference model fro N_eval points per
-% degree of freedom
+% optimizing target based on reference model for N_eval points per coord.
 [osimModel_opt, SimsInfo{N_eval}] = optimMuscleParams(osimModel_ref_filepath, osimModel_targ_filepath, N_eval, log_folder);
 
 % printing the optimized model
-osimModel_opt.print(fullfile(OptimizedModel_folder, char(osimModel_opt.getName())));
+osimModel_opt.print(fullfile(optimizedModel_folder, char(osimModel_opt.getName())));
 
-% removing libraries
+% removing functions from path
 rmpath('./MuscleParOptTool');

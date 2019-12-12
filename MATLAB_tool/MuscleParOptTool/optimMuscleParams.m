@@ -43,6 +43,10 @@ osimModel_opt_name  = [name,'_opt',res_file_id_exp,ext];
 osimModel_targ.setName(osimModel_opt_name);
 
 % initializing log file
+if ~isdir(log_folder)
+    warning([log_folder,' does not exist. It will be created']);
+    mkdir(log_folder);
+end
 log_filepath = fullfile(log_folder,[name,'_opt',res_file_id_exp,'.log']);
 % cleaning file (otherwise it appends)
 fopen(log_filepath,'w+'); fclose all;
