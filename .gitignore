@@ -1,5 +1,6 @@
 # ignore OpenSim log files
 err.log
 out.log
+*.asv
 # ignore VIM files
 *.*~
