@@ -3,7 +3,7 @@
 This repository contains a MATLAB package implementing an algorithm for optimizing the parameters of Hill-type muscle models defined by adimensional force-lenght-velocity curves, as described by _Zajac (1989)_.
 
 
-The algorithm is generic but the implementation is specific for musculoskeletal models implemented in the software for biomechanical analyses [OpenSim](https://opensim.stanford.edu/).
+The algorithm is generic but the implementation is specific for musculoskeletal models of the software for biomechanical analyses [OpenSim](https://opensim.stanford.edu/).
 
 
 The repository is made available as accompanying material of [this publication](https://research-repository.griffith.edu.au/bitstream/handle/10072/101916/ModenesePUB918.pdf?sequence=1): 
