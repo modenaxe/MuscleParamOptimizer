@@ -56,7 +56,10 @@ function musOutput = sampleMuscleQuantities(osimModel,OSMuscle,muscleQuant, N_Ev
 % limit (1) or not (0) the discretization of the joint space sampling
 limit_discr = 0; 
 % minimum angular discretization
-min_increm_in_deg = 2.5;
+%min_increm_in_deg = 2.5;
+min_increm_in_deg = 1;
+
+
 %=======================
 
 % initialize the model
@@ -65,7 +68,7 @@ currentState = osimModel.initSystem();
 % getting the joint crossed by a muscle
 muscleCrossedJointSet = getJointsSpannedByMuscle(osimModel, OSMuscle);
 
-% index for effective dofs
+% index f+or effective dofs
 n_dof = 1;
 DOF_Index = [];
 for n_joint = 1:size(muscleCrossedJointSet,2)
@@ -74,12 +77,12 @@ for n_joint = 1:size(muscleCrossedJointSet,2)
     curr_joint = muscleCrossedJointSet{n_joint};
     
     % get CoordinateSet for the crossed joint
-    curr_joint_CoordinateSet = osimModel.getJointSet().get(curr_joint).getCoordinateSet();
+    %curr_joint_CoordinateSet = osimModel.getJointSet().get(curr_joint).getCoordinateSet();
     
     % Initial estimation of the nr of Dof of the CoordinateSet for that
     % joint before checking for locked and constraint dofs.
-    nDOF = osimModel.getJointSet().get(curr_joint).getCoordinateSet().getSize();
-    
+    %nDOF = osimModel.getJointSet().get(curr_joint).getCoordinateSet().getSize();
+    nDOF = osimModel.getJointSet().get(curr_joint).numCoordinates();
     % skip welded joint and removes welded joint from muscleCrossedJointSet
     if nDOF == 0;
         continue;
@@ -90,7 +93,9 @@ for n_joint = 1:size(muscleCrossedJointSet,2)
     for n_coord = 0:nDOF-1
         
         % get coordinate
-        curr_coord = curr_joint_CoordinateSet.get(n_coord);
+        %curr_coord = curr_joint_CoordinateSet.get(n_coord);
+        curr_coord = osimModel.getJointSet().get(curr_joint).get_coordinates(n_coord);
+        
         curr_coord_name = char(curr_coord.getName());
         
         % skip dof if locked
