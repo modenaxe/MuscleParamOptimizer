@@ -60,7 +60,7 @@ A generic tool to optimize musculotendon parameters in musculoskeletal models is
 * as menu extension of the OpenSim GUI (graphical user interface).
 Please refer directly to the repository and to the nice documentation available at [this website](http://muscleoptimizer.github.io/MuscleOptimizer/).
 
-# Contributord
+# Contributors
 Thank you to Bryce Killen from KU Leuven for updating the code for OpenSim 4.1!
 
 # References
