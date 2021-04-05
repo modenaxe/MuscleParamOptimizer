@@ -5,7 +5,6 @@ Created on Thu Mar 25 15:51:17 2021
 
 @author: emi
 """
-
 # ------------------------------------------------------------------------ #
 # Copyright (c) 2019 Modenese L., Ceseracciu, E., Reggiani M., Lloyd, D.G. #
 #                                                                          #
@@ -24,42 +23,63 @@ Created on Thu Mar 25 15:51:17 2021
 #    email:    l.modenese@imperial.ac.uk                                   # 
 # ------------------------------------------------------------------------ #
 
-
-
+# Written by Emiliano Ravera emiliano.ravera@uner.edu.ar as part of the 
+# Python version of work by Luca Modenese in the parameterisation of muscle
+# tendon properties.
 
 #------ import packages --------- 
-import subprocess
 from pathlib import Path
-import pandas as pd
-import numpy as np
-from scipy.signal import find_peaks
-import matplotlib.pyplot as plt
+
+# adding OpenSim to python script
 import sys
 sys.path.append('/opt/opensim-core/lib/python3.6/site-packages/')
 import opensim
-from lxml import etree
-import gc
+
+# # adding tool function to python script
+# from Public_functions import getModelJointDefinitions, \
+#                                 getChildBodyJoint, \
+#                                 getParentBodyJoint, \
+#                                 getMuscleAttachBody
+
+# from Private_functions import getJointsSpannedByMuscle, \
+#                                 getIndipCoordAndJoint, \
+#                                 sampleMuscleQuantities
+
+from optimMuscleParams import optimMuscleParams
 #-------------------------------- 
 
 
 # ========= USERS SETTINGS =======
+actualpath = Path().resolve()
+# p = actualpath.parent
+path_opensim_files = str(actualpath.parent) + '/Example_case'
+
 # REFERENCE MODEL
 # Muscle dynamics from Arnold model will be mapped onto the target model.
-osimModel_ref_filepath   = '.\Example_case\Input_Models\Reference_Arnold_R.osim';
+osimModel_ref_filepath  = path_opensim_files + '/Input_Models/Reference_Arnold_R.osim' 
 
 # TARGET MODEL
 # Target model is a model built from scratch using dataveric data.
-osimModel_targ_filepath  = '.\Example_case\Input_Models\Target_LHDL_Schutte_R.osim';
+osimModel_targ_filepath  = path_opensim_files +  '/Input_Models/Target_LHDL_Schutte_R.osim'
 
 # nr of evaluations per coordinate
-N_eval = 10;
+N_eval = 10
 
-# Folder where to store the optimized model and a log
-optimizedModel_folder = '.\Example_case\Optimized_Models';
 # ================================
 
+# Folder where to store the optimized model and a log
+# checking if folder exists. If not, create it.
+optimizedModel_folder = Path(path_opensim_files + '/Optimized_Models')
+optimizedModel_folder.mkdir(parents=True, exist_ok=True)
+# initializing folders and log file
+log_folder = str(optimizedModel_folder)
 
 
+# optimizing target based on reference model for N_eval points per coord.
+osimModel_opt, SimsInfo = optimMuscleParams(osimModel_ref_filepath, osimModel_targ_filepath, N_eval, log_folder);
+
+# printing the optimized model
+osimModel_opt.printToXML(str(optimizedModel_folder) + '/' + osimModel_opt.getName())
 
 
 
