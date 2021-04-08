@@ -1,13 +1,3 @@
-# ignore OpenSim log files
-err.log
-out.log
-
-# MATLAB
-*.asv
-
-# VIM files
-*.*~
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
