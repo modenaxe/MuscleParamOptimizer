@@ -41,19 +41,25 @@ The idea consists in mapping the normalized muscle contractile conditions from t
 * **Scaled generic model**: a lower limb model was scaled linearly to the size of an individual to [perform a running simulation](https://simtk.org/projects/runningsim) as published by _Hamner et al. (2010)_. The muscle parameters of the [obtained model](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/manuscript_material/Example1/MSK_Models) were then optimized non-linearly using the original generic model as reference model.
 * **Subject-specific model**: a [model of the lower limb](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/manuscript_material/Example2/MSK_Models) was built from scratch using the LHDL cadaveric dataset and its muscle parameters were estimated and validated using the [lower limb model](https://simtk.org/projects/lowlimbmodel09) of _Arnold et al. (2010)_ as reference model.
 
-## MATLAB Scripts
-Following the alphabetic order of the scripts in the main folder, it is possible to:
+# Versions of the tool
+
+## MATLAB version
+
+A MATLAB version of the tool MATLAB tool is available in the [corresponding folder](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/MATLAB_tool), together with an example of use. The same main script can be easily adapted for the optimization of other personalized models.
+
+For the MATLAB version, there is a [manuscript folder](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/manuscript_material) including all the scripts and models from the publication. Following the alphabetic order of the scripts, it is possible to:
 * reproduce exactly the results presented in the associated publication in the manuscript (scripts a and b)
 * generate the associated Figures (scripts c-d-e).
 
 __Please note__ that reproducing the sensitivity study can be time-consuming, depending on the available computational resources.
 
-# Example of use of a generic MATLAB tool
 
-An example of use of a MATLAB tool is available in the [corresponding folder](https://github.com/modenaxe/MuscleParamOptimizer/tree/master/MATLAB_tool). 
-The same main script can be easily adapted for the optimization of other personalized models.
+## Python tool (currently under revision)
 
-# OpenSim C++ plugin and User Interface Menu
+A Python version of the tool has been written and kindly shared by @eravera. It is currently **under assessment** although tested and working.
+
+
+## OpenSim C++ plugin and User Interface Menu
 
 A generic tool to optimize musculotendon parameters in musculoskeletal models is also available at [this repository](https://github.com/MuscleOptimizer/MuscleOptimizer) as:
 * C++ OpenSim plugin 
@@ -61,7 +67,11 @@ A generic tool to optimize musculotendon parameters in musculoskeletal models is
 Please refer directly to the repository and to the nice documentation available at [this website](http://muscleoptimizer.github.io/MuscleOptimizer/).
 
 # Contributors
-Thank you to Bryce Killen from KU Leuven for updating the code for OpenSim 4.1!
+
+Special thanks to:
+
+* **Bryce Killen** from KU Leuven, Belgium, for updating the code for OpenSim 4.1!
+* **Emiliano Ravera** from Instituto de Investigación y Desarrollo en Bioingenieria y Bioinformática, IBB (CONICET-UNER), Argentina.
 
 # References
 * Zajac, F.E. Muscle and tendon: properties, models, scaling, and application to biomechanics and motor control. Critical Reviews in Biomedical Engineering. 17: 359-411, 1989. [LINK](https://www.ncbi.nlm.nih.gov/pubmed/2676342)
