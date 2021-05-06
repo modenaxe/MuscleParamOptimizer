@@ -11,6 +11,13 @@ function [osim_version_float, osim_version_string] = getOpenSimVersion()
 % read env variable
 osimpath = getenv('OPENSIM_HOME');
 
+% let's assume it's the latest version in case there is no path variable
+if isempty(osimpath)
+    osim_version_float = 4.1;
+    osim_version_string = '4.1';
+    return
+end
+
 % get the file separators, e.g. '\' in 'C:\Program files\OpenSim 4.1'
 sep_set = strfind(osimpath, filesep);
 
