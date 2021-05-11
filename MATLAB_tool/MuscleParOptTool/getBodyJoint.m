@@ -13,6 +13,13 @@ import org.opensim.modeling.*;
 
 if nargin<3; debug_printout=0; end
 
+% default
+bodyJoint = [];
+
+if strcmp(aBodyName, 'ground')
+    return
+end
+
 % check if body is included in the model
 if osimModel.getBodySet().getIndex(aBodyName)<0
     error(['getBodyJoint.m The specified body ', aBodyName,' is not included in the OpenSim model'])
@@ -37,9 +44,9 @@ for n_joint = 0:jointSet.getSize()-1
     
     % get base frame name
     possible_body_name = char(body_of_frame.getName());
-    
+
     % if body with that name exist than the joint is that body's joint
-    if osimModel.getBodySet.getIndex(possible_body_name)>0 && strcmp(aBodyName, possible_body_name)
+    if osimModel.getBodySet.getIndex(possible_body_name)>=0 && strcmp(aBodyName, possible_body_name)
         
         % save the joints with the specified body as Child 
         jointName(nj) = {char(cur_joint.getName())};
