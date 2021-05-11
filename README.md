@@ -95,6 +95,7 @@ Special thanks to:
 
 * **Bryce Killen** from KU Leuven, Belgium, for updating the code for OpenSim 4.1!
 * **Emiliano Ravera** from Instituto de Investigación y Desarrollo en Bioingenieria y Bioinformática, IBB (CONICET-UNER), Argentina.
+* **Dario Sciacca** from KU Leuven, Belgium, for his feedback on version 4.x.
 
 # References
 * Zajac, F.E. Muscle and tendon: properties, models, scaling, and application to biomechanics and motor control. Critical Reviews in Biomedical Engineering. 17: 359-411, 1989. [LINK](https://www.ncbi.nlm.nih.gov/pubmed/2676342)
