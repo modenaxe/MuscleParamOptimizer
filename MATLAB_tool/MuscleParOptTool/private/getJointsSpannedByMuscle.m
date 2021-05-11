@@ -42,10 +42,6 @@ OSMuscleName = char(OSMuscleName);
 BodySet = osimModel.getBodySet();
 muscle  = osimModel.getMuscles.get(OSMuscleName);
 
-% additions BAK
-% load a jointStrucute detailing bone and joint configurations
-jointStructure = getModelJointDefinitions(osimModel);
-
 % Extracting the PathPointSet via GeometryPath
 musclePath = muscle.getGeometryPath();
 musclePathPointSet = musclePath.getPathPointSet();
@@ -88,24 +84,35 @@ n_spanJoint = 1;
 n_spanJointNoDof = 1;
 NoDofjointNameSet = {};
 jointNameSet = {};
+disp(['   spanned joints: '])
 while ~strcmp(bodyName,ProximalBodyName)
     
-    %spannedJoint = body.getJoint();
-    %spannedJointName = char(spannedJoint.getName());
+    if getOpenSimVersion()<4.0
+        spannedJoint = body.getJoint();
+    else
+        spannedJoint = getBodyJoint(osimModel, char(body.getName()), 0);
+    end
     
-    % BAK implementation
-    spannedJointName = getChildBodyJoint(jointStructure, body.getName());
-    spannedJoint = osimModel.getJointSet().get(spannedJointName);
-   
+    % check if spannedJoint is empty (meaning it is "ground")
+    if isempty(spannedJoint)
+        warndlg(['The path of muscle ',OSMuscleName,' has reached ground without finding its origin, meaning that its path is not going proximal only. This case is not supported. Please check the logs and assess if the computations are acceptable for your case.'])
+        return
+    end
+    
+    spannedJointName = char(spannedJoint.getName());
+    disp(['    * ', spannedJointName]);
+    
     if strcmp(spannedJointName, spannedJointNameOld)
-         %body =  spannedJoint.getParentBody();
-         % BAK implementation
-         body = jointStructure.spannedJoint.parentBody;
-         
+         body =  spannedJoint.getParentBody();
          spannedJointNameOld = spannedJointName;
     else
-            %if spannedJoint.getCoordinateSet().getSize()~=0
-            if spannedJoint.numCoordinates()~=0
+        if getOpenSimVersion()<4.0
+            nr_coords = spannedJoint.getCoordinateSet().getSize();
+        else
+            nr_coords = spannedJoint.numCoordinates();
+        end
+            if nr_coords~=0
+         
         jointNameSet{n_spanJoint} =  spannedJointName;
         n_spanJoint = n_spanJoint+1;
             else
@@ -113,13 +120,13 @@ while ~strcmp(bodyName,ProximalBodyName)
                 n_spanJointNoDof = n_spanJointNoDof+1;
             end
         spannedJointNameOld = spannedJointName;
-        %body =  spannedJoint.getParentBody();
-        bodyName = jointStructure.(char(spannedJointName)).parentBody;
-        body = osimModel.getBodySet().get(bodyName);
-        
+        if getOpenSimVersion()<4.0
+            body =  spannedJoint.getParentBody();
+        else
+            body =  spannedJoint.getParentFrame().findBaseFrame();
+        end
     end
-    bodyName = body.getName();
-    
+    bodyName = char(body.getName());
 end
 
 if isempty(jointNameSet)

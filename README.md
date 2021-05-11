@@ -1,3 +1,17 @@
+# Table of Contents <!-- omit in toc -->
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Contents from the paper](#contents-from-the-paper)
+  - [Algorithm description](#algorithm-description)
+  - [Considered Cases](#considered-cases)
+- [Versions of the tool](#versions-of-the-tool)
+  - [MATLAB version](#matlab-version)
+  - [Python tool (currently under revision)](#python-tool-currently-under-revision)
+  - [OpenSim C++ plugin and User Interface Menu](#opensim-c-plugin-and-user-interface-menu)
+- [Notes on upgrading to OpenSim 4.0 and backward compatibility](#notes-on-upgrading-to-opensim-40-and-backward-compatibility)
+- [Contributors](#contributors)
+- [References](#references)
+
 # Introduction
 
 This repository contains a MATLAB package implementing an algorithm for optimizing the parameters of Hill-type muscle models defined by adimensional force-lenght-velocity curves, as described by _Zajac (1989)_.
@@ -56,7 +70,7 @@ __Please note__ that reproducing the sensitivity study can be time-consuming, de
 
 ## Python tool (currently under revision)
 
-A Python version of the tool has been written and kindly shared by @eravera. It is currently **under assessment** although tested and working.
+A Python version of the tool has been written and kindly shared by @eravera.
 
 
 ## OpenSim C++ plugin and User Interface Menu
@@ -66,12 +80,22 @@ A generic tool to optimize musculotendon parameters in musculoskeletal models is
 * as menu extension of the OpenSim GUI (graphical user interface).
 Please refer directly to the repository and to the nice documentation available at [this website](http://muscleoptimizer.github.io/MuscleOptimizer/).
 
+# Notes on upgrading to OpenSim 4.0 and backward compatibility
+
+The tool can be used with both OpenSim 3.3 and 4.0 without modifications.
+
+Please be aware that the results provided by the two versions are slightly different, as noticed when running our tests.
+
+To investigate further please consult the tests folder and scripts.
+
+
 # Contributors
 
 Special thanks to:
 
 * **Bryce Killen** from KU Leuven, Belgium, for updating the code for OpenSim 4.1!
 * **Emiliano Ravera** from Instituto de Investigación y Desarrollo en Bioingenieria y Bioinformática, IBB (CONICET-UNER), Argentina.
+* **Dario Sciacca** from KU Leuven, Belgium, for his feedback on version 4.x.
 
 # References
 * Zajac, F.E. Muscle and tendon: properties, models, scaling, and application to biomechanics and motor control. Critical Reviews in Biomedical Engineering. 17: 359-411, 1989. [LINK](https://www.ncbi.nlm.nih.gov/pubmed/2676342)
