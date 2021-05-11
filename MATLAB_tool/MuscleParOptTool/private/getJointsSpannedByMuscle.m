@@ -84,6 +84,7 @@ n_spanJoint = 1;
 n_spanJointNoDof = 1;
 NoDofjointNameSet = {};
 jointNameSet = {};
+disp(['   spanned joints: '])
 while ~strcmp(bodyName,ProximalBodyName)
     
     if getOpenSimVersion()<4.0
@@ -92,7 +93,14 @@ while ~strcmp(bodyName,ProximalBodyName)
         spannedJoint = getBodyJoint(osimModel, char(body.getName()), 0);
     end
     
+    % check if spannedJoint is empty (meaning it is "ground")
+    if isempty(spannedJoint)
+        warndlg(['The path of muscle ',OSMuscleName,' has reached ground without finding its origin, meaning that its path is not going proximal only. This case is not supported. Please check the logs and assess if the computations are acceptable for your case.'])
+        return
+    end
+    
     spannedJointName = char(spannedJoint.getName());
+    disp(['    * ', spannedJointName]);
     
     if strcmp(spannedJointName, spannedJointNameOld)
          body =  spannedJoint.getParentBody();
