@@ -316,11 +316,6 @@ def sampleMuscleQuantities(osimModel,OSMuscle,muscleQuant, N_EvalPoints):
         
     # assigns an interval of variation following the initial and final value
     # for each dof X
-    CoordinateRanges = {}
-    for pos, dof in enumerate(DOF_Index):
-        CoordinateRanges[str(dof)] = np.arange(CoordinateBoundaries[pos][0] , CoordinateBoundaries[pos][1] + degIncrem[pos], degIncrem[pos])
-    
-    CoordinateCombinations = [dict(zip(CoordinateRanges.keys(), element)) for element in product(*CoordinateRanges.values())]        
         
     # setting up for loops in order to explore all the possible combination of
     # joint angles (looping on all the dofs of each joint for all the joint
@@ -332,7 +327,7 @@ def sampleMuscleQuantities(osimModel,OSMuscle,muscleQuant, N_EvalPoints):
     # The dictionary keys are the DOF_Index in the model
     CoordinateRange = {}
     for pos, dof in enumerate(DOF_Index):
-        CoordinateRange[str(dof)] = np.arange(CoordinateBoundaries[pos][0] , CoordinateBoundaries[pos][1] + degIncrem[pos], degIncrem[pos])
+        CoordinateRange[str(dof)] = np.linspace(CoordinateBoundaries[pos][0] , CoordinateBoundaries[pos][1], N_EvalPoints)
     
     # generate a list of dictionaries to explore all the possible combination of
     # joit angle
