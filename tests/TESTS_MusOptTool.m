@@ -36,8 +36,15 @@ log_folder = './test2_logs';
 % optimize
 [osimModel_opt, SimsInfo] = optimMuscleParams(reference_model, target_model, N_eval, log_folder);
 
-% test
-expected_model  = './models/test2_expected.osim';
+% test: note that from OpenSim 3.3 to 4.x results are slightly different
+% if compared to 'test2_expected.osim', a model optimized with OpenSim 4
+% would have a loss function ~ 0.001.
+if getOpenSimVersion()<4
+    expected_model  = './models/test2_expected.osim';
+else
+    expected_model  = './models/test2_expected_v4.osim';
+end
+
 osimExp = Model(expected_model);
 % load muscles
 exp_mus = osimExp.getMuscles();
