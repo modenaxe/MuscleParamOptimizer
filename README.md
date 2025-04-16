@@ -1,3 +1,5 @@
+# Muscle Optimizer ![visitors](https://visitor-badge.laobi.icu/badge?page_id=modenaxe.muscleparamoptimizer)
+
 # Introduction
 
 This repository contains a MATLAB package implementing an algorithm for optimizing the parameters of Hill-type muscle models defined by adimensional force-lenght-velocity curves, as described by _Zajac (1989)_.
